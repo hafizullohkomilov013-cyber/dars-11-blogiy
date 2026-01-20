@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+body {
+  font-family: 'Inder', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1256px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+}
