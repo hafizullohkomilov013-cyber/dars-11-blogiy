@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function BarLInk() {
+function BarLink() {
   return (
     <div className='flex pt-3 flex-col gap-7  items-start'>
             <Link className='text-[16px] pl-2 text-[#0F1729] font-medium' to={"/"}>Home</Link>
@@ -11,4 +11,4 @@ function BarLInk() {
   )
 }
 
-export default BarLInk
+export default BarLink
