@@ -6,26 +6,26 @@ import PostPage from './Pages/Public/PostPage'
 import PostDetailsPage from './Pages/Public/PostDetailsPage'
 
 function App() {
-  let routes =  createBrowserRouter([
+  let routes = createBrowserRouter([
     {
-      path:'/',
-      element:<Public/>,
-      children:[
+      path: "/",
+      element: <Public />,
+      children: [
         {
-          index:true,
-          element:<HomePage/>
+          index: true,
+          element: <HomePage />,
         },
         {
-          path:"/PostPage",
-          element:<PostPage/>
+          path: "/PostPage",
+          element: <PostPage />,
         },
         {
-          path:"/PostDetailsPage",
-          element:<PostDetailsPage/>
-        }
-      ]
-    }
-  ])
+          path: "/PostDetailsPages/:hi",
+          element: <PostDetailsPage />,
+        },
+      ],
+    },
+  ]);
 
 
   return ( <RouterProvider router={routes}/> )
