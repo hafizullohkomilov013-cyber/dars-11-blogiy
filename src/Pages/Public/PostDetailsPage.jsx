@@ -36,7 +36,7 @@ function PostDetailsPages() {
       <div className="container ">
         <Link
           className="flex items-center text-[#0F1729] gap-2 font-medium py-3 px-6"
-          to="/PostPages"
+          to="/PostPage"
         >
           <i className="fa-solid fa-arrow-left"></i> Back to Posts
         </Link>

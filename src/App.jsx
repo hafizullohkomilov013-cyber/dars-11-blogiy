@@ -4,6 +4,8 @@ import Public from './Layouts/Public'
 import HomePage from './Pages/Public/HomePage'
 import PostPage from './Pages/Public/PostPage'
 import PostDetailsPage from './Pages/Public/PostDetailsPage'
+import LoginPage from './Pages/Auth/LoginPage'
+import AuthLayouts from './Layouts/AuthLayouts'
 
 function App() {
   let routes = createBrowserRouter([
@@ -25,6 +27,16 @@ function App() {
         },
       ],
     },
+    {
+      path:"/Login",
+      element:<AuthLayouts/>,
+      children:[
+        {
+          index:true,
+          element:<LoginPage/>
+        }
+      ]
+    }
   ]);
 
 

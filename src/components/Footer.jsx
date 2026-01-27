@@ -19,7 +19,7 @@ function Footer() {
             <div className='flex flex-col gap-2 text-gray-700 '>
               <Link className='hover:text-blue-700 transition' to={"/"}>Home</Link>
               <Link className='hover:text-blue-700 transition' to={"/PostPage"}>Posts</Link>
-              <Link className='hover:text-blue-700 transition' to={"/PostDetailsPage"}>Login</Link>
+              <Link className='hover:text-blue-700 transition' to={"/Login"}>Login</Link>
             </div>
           </div>
           <div className='w-full max-w-70'>

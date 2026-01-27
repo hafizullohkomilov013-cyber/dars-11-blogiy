@@ -14,7 +14,7 @@ function Navbar() {
         <div className='hidden  md:flex  gap-8 items-center'>
             <Link className='text-[16px] text-[#0F1729] font-medium' to={"/"}>Home</Link>
             <Link className='text-[16px] text-[#0F1729] font-medium' to={"/PostPage"}>Post</Link>
-            <Link className='text-[16px] text-white font-medium bg-[#4346EF] py-2 px-4 rounded-2xl' to={"#"}>Login</Link>
+            <Link className='text-[16px] text-white font-medium bg-[#4346EF] py-2 px-4 rounded-2xl' to={"/Login"}>Login</Link>
         </div>
         <div onClick={() => setOpen(!open)} className='md:hidden text-2xl'>
           {open? <i className="fa-solid fa-x"></i> : <i className="fa-solid fa-bars"></i>}
