@@ -1,6 +1,7 @@
 import React from "react";
 import BlogyLogo from "../../assets/img/Link.svg";
 import { Link } from "react-router-dom";
+import LoginImg from "../../assets/img/LoginImg.png"
 
 function LoginPage() {
   return (
@@ -16,14 +17,16 @@ function LoginPage() {
             Back to Home
           </Link>
           <div className="py-6 px-8 w-full max-w-md border-2 border-gray-200 rounded-2xl ">
-            <h2>Welcome Back</h2>
-            <p>Enter your credentials to access your account</p>
+            <h2 className="text-[#0F1729] text-[30px] font-bold mb-2">Welcome Back</h2>
+            <p className="text-[16px] text-[#6B7280] mb-6">Enter your credentials to access your account</p>
             <form>
-              <label>
-                <input type="text" placeholder="name@example.com" />
+              <label className="flex flex-col">
+                <span className="text-[14px] text-[#0F1729] font-medium mb-2">Email</span>
+                <input className="border-2 border-gray-200 rounded-lg p-2 outline-none mb-4" type="text" placeholder="name@example.com" />
               </label>
-              <label>
-                <input type="password" placeholder="********" />
+              <label className="flex flex-col">
+                <span className="text-[14px] text-[#0F1729] font-medium mb-2">Password</span>
+                <input className="border-2 border-gray-200 rounded-lg p-2 outline-none mb-4" type="password" placeholder="********" />
               </label>
               <button
                 className="text-white cursor-pointer rounded-2xl w-full py-3 bg-[#4346EF]"
@@ -41,7 +44,15 @@ function LoginPage() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex justify-center items-center">Images</div>
+      <div className="flex flex-col pt-5 bg-[#F2F1FD] w-1/2 items-center">
+        <img className="w-full max-w-xl max-h-xl" src={LoginImg} alt="Login" />
+        <h2 className="text-[#0F1729] text-[30px] font-bold">
+          Start Your Journey
+        </h2>
+        <p className="text-[18px] text-[#6B7280]">
+          Join thousands of creators sharing their stories on Blogify
+        </p>
+      </div>
     </div>
   );
 }
