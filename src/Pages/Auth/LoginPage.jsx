@@ -40,8 +40,8 @@ function LoginPage() {
   }
 
   return (
-    <div className="flex w-full h-screen">
-      <div className="w-1/2 flex flex-col justify-center items-center">
+    <div className="flex justify-center w-full h-screen">
+      <div className="w-full px-5 lg:w-1/2 flex flex-col justify-center items-center">
         <div className="m-auto w-full max-w-md">
           <img className="mb-8 w-fit" src={BlogyLogo} alt="Blogy Logo" />
           <Link
@@ -79,7 +79,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col pt-5 bg-[#F2F1FD] w-1/2 items-center">
+      <div className="hidden lg:flex flex-col pt-5 bg-[#F2F1FD] w-1/2 items-center">
         <img className="w-full max-w-xl max-h-xl" src={LoginImg} alt="Login" />
         <h2 className="text-[#0F1729] text-[30px] font-bold">
           Start Your Journey
